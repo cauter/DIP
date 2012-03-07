@@ -13,4 +13,15 @@
           http://www.springframework.org/schema/util/spring-util-2.5.xsd http://www.springframework.org/schema/util/spring-util-2.5.xsd/spring-spring-util-2.5.xsd-2.5.xsd
 ">
 
+
+<bean id="food" class="dip.lab2.FoodServiceTipCalculator" scope="singleton" >
+    <constructor-arg name="q" ref="" />
+    <constructor-arg name="billAmt" value="50" />
+</bean>
+
+<bean id="bags" class="dip.lab2.BaggageServiceTipCalculator" scope="prototype" >
+    <constructor-arg name="" ref="" />
+    <constructor-arg name="" ref="" />
+</bean>
+
 </beans>

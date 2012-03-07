@@ -1,9 +1,8 @@
 package dip.lab2;
 
-// An useful import if you need it.
-import java.text.NumberFormat;
-// Another useful import if you need it.
-import javax.swing.JOptionPane;
+import org.springframework.context.support.AbstractApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
 
 /**
  * Just a test class for input and output.
@@ -56,5 +55,10 @@ public class Startup
 //                               + "'s tip: " + 
 //                               nf.format(tipper.getTipTotal()));
 //        }
+        
+        final AbstractApplicationContext ctx =
+                new ClassPathXmlApplicationContext("applicationContext.xml");
+        
+        
     }
 }
