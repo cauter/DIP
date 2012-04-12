@@ -6,8 +6,11 @@ package dip.lab2;
  * @course Adv. Java 152 - 135
  * @version 1.0
  */
-public interface TipCalculator
+public class TipCalculator
 {
     //Methods
-    public abstract double getTip();
+    public double getTip()
+    {
+        return 0.0;
+    }
 }
