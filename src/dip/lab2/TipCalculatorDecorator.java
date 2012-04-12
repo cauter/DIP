@@ -1,17 +1,14 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package dip.lab2;
 
 /**
  *
- * @author cauter
+ * @author Cody Auter
  */
-public class TipCalculatorDecorator 
+public abstract class TipCalculatorDecorator 
 {
     //Properties
     private TipCalculator calc;
     
     //Methods
+    public abstract double getTip();
 }

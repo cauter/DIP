@@ -10,7 +10,7 @@ package dip.lab2;
  * @course Adv. Java 152-135
  * @version 1.5
  */
-public class BaggageServiceTipCalculator implements TipCalculator 
+public class BaggageService extends TipCalculatorDecorator 
 {
     private static final double GOOD_RATE = 0.20;
     private static final double FAIR_RATE = 0.15;
@@ -20,7 +20,7 @@ public class BaggageServiceTipCalculator implements TipCalculator
     private int bagCount;
     private ServiceQuality serviceQuality;
 
-    public BaggageServiceTipCalculator(ServiceQuality q, int bags) {
+    public BaggageService(ServiceQuality q, int bags) {
         this.setServiceRating(q); // perform validation
         this.setBagCount(bags);
 

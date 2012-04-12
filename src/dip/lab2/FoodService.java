@@ -10,7 +10,7 @@ package dip.lab2;
  * @course Adv. Java 152 - 135
  * @version 1.5
  */
-public class FoodServiceTipCalculator implements TipCalculator
+public class FoodService extends TipCalculatorDecorator
 {
     private static final double MIN_BILL = 0.00;
     private static final String BILL_ENTRY_ERR =
@@ -22,7 +22,7 @@ public class FoodServiceTipCalculator implements TipCalculator
     private double bill;
     private ServiceQuality serviceQuality;
 
-    public FoodServiceTipCalculator(ServiceQuality q, double billAmt) {
+    public FoodService(ServiceQuality q, double billAmt) {
         this.setServiceRating(q);
         this.setBill(billAmt);
     }
